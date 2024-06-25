@@ -1,12 +1,10 @@
 import './style.css'
-import { name , age, templateString} from './bases/01-types.ts'
-
+import { pokemonIds, pokemon } from './bases/02-objects.ts'
 
 document.querySelector<HTMLDivElement>('#app')!.innerHTML = `
   <div>
-    <h1>Hello Vite!!!</h1>
-    <h2>your name is: ${name}</h2>
-    <h2>and your age is: ${age}</h2>
-    ${templateString}
+    <h1>Hello!!!</h1>
+    <h2>${pokemon}</h2>
+    <h2>${pokemonIds}</h2>
   </div>
 `
