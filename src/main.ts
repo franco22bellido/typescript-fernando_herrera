@@ -1,9 +1,10 @@
+import { charmander } from './bases/03-clases'
 import './style.css'
-import { pokemons } from './bases/02-objects.ts'
+
 
 document.querySelector<HTMLDivElement>('#app')!.innerHTML = `
   <div>
-    <h1>Hello!!!</h1>
-    <h2>pokemons : ${pokemons.map((pokemon)=> JSON.stringify(pokemon))}</h2>
+    <h1>Hello there!!!</h1>
+    <h1>${JSON.stringify(charmander)}!!!</h1>
   </div>
 `
